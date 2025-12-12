@@ -20,7 +20,7 @@ This project was built to satisfy a university final project and yes, **the UML 
 
 ## UML Class Diagram
 
-When you run the program, this ASCII dappears:
+When you run the program, this ASCII appears:
 
         ╔═════════════════════════════════════════════════════════════════╗
         ║              WELCOME TO THE SELF-AWARE UML GAME                 ║
