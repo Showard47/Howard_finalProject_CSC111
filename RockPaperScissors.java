@@ -1,8 +1,18 @@
 /*
 ╔═══════════════════════════════════════════════════════════════════════════════╗
 ║                           ROCK PAPER SCISSORS                                 ║
-║              "The UML That Became Code" – Now with explanations!              ║
+║                       "The UML That Became Code"                              ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
+Sean Howard
+Initial Version: 12-01-2025 
+Last Edits: 12-12-2025 
+COSC 111
+Prof Tracy
+DISCLAIMER:
+I asked AI to help me find my ALT commands for the ASCI box | Alt + 201,187,200,188,186,205,204,185,203,202,206.
+I asked AI to help me solve issue where I couldnt find Errors for why it wasnt compiling
+I asked AI to help me solve the ASCI Art where it wasnt just one long System.out.println sequence
+I used AI for refactoring suggestions and polishing. (Initial build was in 1 Main Helped me understand where to split into 2 classes)
 */
 
 import java.util.Random;   // For computer's random choices
@@ -12,17 +22,17 @@ public class RockPaperScissors {
 
     // ──────────────────────────────────────────────────────────────────────
     // ASCII ART OF THE UML CLASS DIAGRAM (shown when program starts)
-    // This is just for fun and to prove "the UML is literally the code"
+    // This is just for fun and to prove
     // ──────────────────────────────────────────────────────────────────────
     private static final String UML_ART = """
         
-        ╔═══════════════════════════════════════════════════════════════╗
-        ║              WELCOME TO THE SELF-AWARE UML GAME               ║
-        ║           (Yes, the class diagram is literally me)           ║
-        ╠═══════════════════════════════════════════════════════════════╣
-        ║   +--------------------------+          +------------------+  ║
-        ║   |   RockPaperScissors      |<>-------> |     RPSGame      |  ║
-        ║   +--------------------------+  uses    +------------------+  ║
+        ╔═════════════════════════════════════════════════════════════════╗
+        ║              WELCOME TO THE SELF-AWARE UML GAME                 ║
+        ║                (Yes, the class diagram is me)                   ║
+        ╠═════════════════════════════════════════════════════════════════╣
+        ║   +--------------------------+          +------------------+    ║
+        ║   |   RockPaperScissors      |<-------> |     RPSGame      |    ║
+        ║   +--------------------------+  users    +------------------+   ║
         ║   | + main(args: String[])   |          | - playerScore: int    ║
         ║   | + displayMenu()          |          | - computerScore: int  ║
         ║   | + getMenuChoice(): int   |          | - ties: int           ║
@@ -33,7 +43,7 @@ public class RockPaperScissors {
         ║                                         | + displayStats()      ║
         ║                                         | + resetGame()         ║
         ║                                         +------------------+    ║
-        ╚═══════════════════════════════════════════════════════════════╝
+        ╚═════════════════════════════════════════════════════════════════╝
         """;
 
     // One shared Scanner for the whole program
