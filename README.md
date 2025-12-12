@@ -22,25 +22,24 @@ This project was built to satisfy a university final project and yes, **the UML 
 
 When you run the program, this ASCII dappears:
 
-╔═══════════════════════════════════════════════════════════════╗
-║              WELCOME TO THE SELF-AWARE UML GAME               ║
-║           (Yes, the class diagram is literally me)           ║
-╠═══════════════════════════════════════════════════════════════╣
-║   +--------------------------+          +------------------+  ║
-║   |   RockPaperScissors      |<>-------> |     RPSGame      |  ║
-║   +--------------------------+  uses    +------------------+  ║
-║   | + main(args: String[])   |          | - playerScore: int    ║
-║   | + displayMenu()          |          | - computerScore: int  ║
-║   | + getMenuChoice(): int   |          | - ties: int           ║
-║   +--------------------------+          | - totalRounds: int    ║
-║                                         | + getComputerChoice() ║
-║                                         | + determineWinner()   ║
-║                                         | + playRound()         ║
-║                                                                 ║
-║                                         | + displayStats()      ║
-║                                         | + resetGame()         ║
-║                                         +------------------+    ║
-╚═══════════════════════════════════════════════════════════════╝
+        ╔═════════════════════════════════════════════════════════════════╗
+        ║              WELCOME TO THE SELF-AWARE UML GAME                 ║
+        ║                (Yes, the class diagram is me)                   ║
+        ╠═════════════════════════════════════════════════════════════════╣
+        ║   +--------------------------+          +------------------+    ║
+        ║   |   RockPaperScissors      |<-------> |     RPSGame      |    ║
+        ║   +--------------------------+  users    +------------------+   ║
+        ║   | + main(args: String[])   |          | - playerScore: int    ║
+        ║   | + displayMenu()          |          | - computerScore: int  ║
+        ║   | + getMenuChoice(): int   |          | - ties: int           ║
+        ║   +--------------------------+          | - totalRounds: int    ║
+        ║                                         | + getComputerChoice() ║
+        ║                                         | + determineWinner()   ║
+        ║                                         | + playRound()         ║
+        ║                                         | + displayStats()      ║
+        ║                                         | + resetGame()         ║
+        ║                                         +------------------+    ║
+        ╚═════════════════════════════════════════════════════════════════╝
 
 
 Clone Repository (optional)
